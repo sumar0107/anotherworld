@@ -1,0 +1,8 @@
+name = "Migrate from repin.info"
+description = "Module to migrate the old site content to Drupal 7"
+package = Migration
+core = 7.x
+
+dependencies[] = migrate
+
+files[] = migrate_repin.migrate.inc

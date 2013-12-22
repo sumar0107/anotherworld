@@ -1,0 +1,170 @@
+#edit-field-imgs table tr td, #edit-body-field-imgs table tr td, #edit-field-funny-photo table tr td {
+    font-size:                  12px;
+    position:                   relative;
+    padding-left:               8px;
+    vertical-align:             middle;
+}
+#edit-field-imgs table tr td .image-preview, #edit-body-field-imgs table tr td .image-preview, #edit-field-funny-photo table tr td .image-preview {
+    padding:                    0px;
+    margin-right:               10px;
+}
+#edit-field-imgs .messages, #edit-body-field-imgs .messages, #edit-field-funny-photo .messages {
+    margin:                     12px 0px;
+}
+#edit-field-imgs .tabledrag-toggle-weight-wrapper, #edit-body-field-imgs .tabledrag-toggle-weight-wrapper, #edit-field-funny-photo .tabledrag-toggle-weight-wrapper {
+    display:                    none;
+}
+#edit-field-imgs .fieldset-description, #edit-body-field-imgs .fieldset-description, #edit-field-funny-photo .fieldset-description {
+    color:                      rgb(102, 102, 102);
+    font-style:                 italic;
+    font-size:                  12px;
+}
+#edit-field-imgs table tr td .tabledrag-changed, #edit-body-field-imgs table tr td .tabledrag-changed, #edit-field-funny-photo table tr td .tabledrag-changed {
+    float:                      left;
+    margin-top:                 -20px;
+    background:                 none repeat scroll 0% 0% transparent;
+}
+#edit-field-imgs table tr td .image-widget-data, #edit-body-field-imgs #edit-body-field-imgs-und-table tr td .image-widget-data, #edit-field-funny-photo #edit-field-funny-photo-und-table tr td .image-widget-data {
+    margin-top:                 12px;
+}
+#edit-field-imgs table tr td .image-widget-data .file-size, #edit-body-field-imgs table tr td .image-widget-data .file-size, #edit-field-funny-photo table tr td .image-widget-data .file-size {
+    font-size:                  11px;
+    color:                      rgb(102, 102, 102);
+    font-style:                 italic;
+}
+#edit-field-imgs table tr td .image-widget-data .insert-button, #edit-body-field-imgs table tr td .image-widget-data .insert-button, #edit-field-funny-photo table tr td .image-widget-data .insert-button {
+    clear:                      both;
+    display:                    block;
+    margin:                     4px 0px;
+}
+#edit-field-imgs, #edit-body-field-imgs {
+    width:                      465px;
+    position:                   absolute;
+    top: 582px;
+    right: -131px;
+}
+#edit-body-field-imgs table thead th, #edit-body-field-imgs table thead th, #edit-field-funny-photo table thead th {
+    font-weight:                normal;
+    padding:                    5px;
+}
+.field-name-body label {
+    font-weight:                normal;
+    margin-bottom:              8px;
+}
+.node-form .form-item {
+    margin:                     0px 0px 15px;
+}
+.node-page-form.node-form .form-item-title {
+    float:                      left;
+    width:                      47%;
+    margin-right:               3%;
+}
+.node-page-form.node-form #edit-field-category {
+    float:                      right;
+    width:                      50%;
+}
+.node-page-form.node-form .form-field-name-field-img {
+    clear:                      both;
+}
+.form-field-name-field-img label {
+    font-weight:                normal;
+    margin-bottom:              8px;
+}
+.form-field-name-field-img .image-preview {
+    padding-bottom:             0px;
+}
+#edit-body-und-0-format, #edit-body-ru-0-format {
+    display:                    none;
+}
+#edit-body {
+    margin-bottom: -20px;
+    width:                      1124px;
+}
+#edit-body #body-add-more-wrapper {
+    float:                      left;
+    width:                      655px;
+}
+.node-caricatury-form #edit-field-category, .node-funny_photo-form #edit-field-category, .node-funny_video-form #edit-field-category {
+    display:                    none;
+}
+.form-field-type-image {
+    margin-bottom:              15px;
+}
+.vertical-tabs fieldset.vertical-tabs-pane {
+    padding:                    10px;
+}
+.form-field-type-video {
+    margin:                     0px 0px 15px;
+}
+.form-field-type-video label {
+    font-weight:                normal;
+    margin:                     0px 0px 6px;
+}
+.form-field-type-video-embed-field {
+    margin:                     0px 0px 15px;
+}
+.form-field-type-video .file-size {
+    font-size:                  12px;
+    color:                      rgb(102, 102, 102);
+}
+.node-funny_video-form #edit-body #body-add-more-wrapper {
+    float:                      none;
+    width:                      auto;
+}
+.node-funny_video-form #edit-body {
+    width:                      auto;
+}
+.node-funny_video-form #edit-body .field-edit-link {
+    display:                    none;
+}
+.form-field-type-image label {
+    font-weight:                normal;
+    margin-bottom:              6px;
+}
+.form-field-type-taxonomy-term-reference label {
+    font-weight:                normal;
+    margin-bottom: 9px;
+    margin-top: 4px;
+}
+#edit-body-field-imgs-und-table div.image-preview {
+    padding-bottom:             0px;
+}
+.insert-template td {
+    padding:                    0px ! important;
+}
+.insert-template {
+    width:                      208px;
+    margin:                     0px;
+}
+.node-form.node-page-form {
+    position:                   relative;
+}
+.form-field-name-field-imgs div.image-widget-data {
+    float:                      left;
+    width:                      228px;
+}
+.form-field-name-field-imgs div.image-preview {
+    width:                      80px;
+}
+.form-field-name-field-imgs div.image-widget {
+    width:                      345px;
+}
+#cke_1_contents .cke_reset{
+    margin: 0 10px 0 0;
+    width: 298px !important;
+}
+.form-item-body-ru-0-summary .form-textarea-wrapper{
+    width: 321px;
+}
+.cke_editable p{
+    
+}
+.form-field-name-field-field-autohs .form-item.form-type-textfield input{
+    width: 436px;
+    
+}
+.node-page-form .form-submit{
+    margin-left: 0px;
+    
+    margin-right: 335px;
+}

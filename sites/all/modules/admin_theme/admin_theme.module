@@ -1,0 +1,22 @@
+<?php
+
+/*
+ * Implements hook_form_alter
+ * 
+ */
+
+function admin_theme_form_alter(&$form, &$form_state, $form_id) {
+  if ($form_id == 'page_node_form') {
+    
+    $form['body']['#attributes']['class'] = array(
+        'field-name-body',
+        'clearfix'
+    );
+    
+//    if(isset($form['field_imgs'])){
+//      $form['body']['field_imgs'] = $form['field_imgs'];
+//    }
+//    unset($form['field_imgs']);
+//    $form['field_imgs']['#language'] = 'und';
+  }
+}

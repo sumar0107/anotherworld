@@ -1,0 +1,993 @@
+.field-name-field-img {
+    float:                      left;
+    margin:                     0px 10px 10px 0px;
+}
+.region-banner {
+    float:                      right;
+}
+.region-banner .block {
+    margin:                     0px;
+}
+#header, #content, #navigation, .region-sidebar-first, .region-sidebar-second, #footer {
+    padding-left:               0px;
+    padding-right:              0px;
+}
+.wrapp-header-1 {
+    font-size:                  11px;
+    font-family:                Arial,Verdana,serif;
+    color:                      rgb(102, 102, 102);
+    line-height:                12px;
+    height:                     20px;
+    padding:                    10px 0px 4px;
+    border-bottom:              1px solid rgb(204, 204, 204);
+    margin-bottom:              3px;
+}
+.wrapp-header-1 .contacts {
+    float:                      left;
+    padding:                    0px 10px;
+}
+.wrapp-header-1 a {
+    color:                      rgb(172, 20, 33);
+}
+.wrapp-header-1 a:hover {
+    color:                      rgb(118, 7, 16);
+}
+.wrapp-header-1 .time {
+    float:                      left;
+    padding:                    0px 10px;
+}
+.wrapp-header-1 #block-user-login {
+    float:                      left;
+    margin:                     0px;
+}
+.wrapp-header-1 #block-user-login .form-item {
+    margin:                     0px 10px 0px 0px;
+    float:                      left;
+}
+.wrapp-header-1 #block-user-login .form-item label {
+    float:                      left;
+    font-weight:                normal;
+    margin-right:               5px;
+}
+.wrapp-header-1 #block-user-login .form-item label .form-required {
+    display:                    none;
+}
+.wrapp-header-1 #block-user-login .item-list {
+    float:                      left;
+    margin-right:               10px;
+}
+.wrapp-header-1 #block-user-login .item-list ul, #secondary-menu ul {
+    margin:                     0px;
+    padding:                    0px;
+}
+.wrapp-header-1 #block-user-login .item-list ul li, #secondary-menu ul li {
+    border-right:               1px solid rgb(172, 20, 33);
+    float:                      left;
+    list-style:                 none outside none;
+    padding-left:               5px;
+    padding-right:              5px;
+}
+.wrapp-header-1 #block-user-login .item-list ul li.last, #secondary-menu ul li.last {
+    border-right:               medium none;
+}
+.wrapp-header-1 #block-user-login .form-item .form-text {
+    width:                      85px;
+    margin-top:                 -4px;
+    height:                     20px;
+    border:                     1px solid rgb(204, 204, 204);
+    line-height:                20px;
+}
+.wrapp-header-1 #block-user-login .form-actions {
+    float:                      left;
+    margin-top:                 -6px;
+}
+.wrapp-header-1 #block-user-login .form-actions input {
+    height:                     22px;
+}
+.google-search {
+    float:                      right;
+    height:                     23px;
+}
+#secondary-menu {
+    float:                      left;
+    margin-left:                30px;
+}
+.region-header .block-menu-block ul.menu {
+    margin:                     0px;
+    padding:                    0px;
+    height:                     24px;
+}
+.region-header .block-menu-block {
+    margin:                     0px;
+    font-size:                  12px;
+    padding:                    0px 5px;
+    background:                 none repeat scroll 0px 0px rgb(204, 204, 204);
+    line-height:                16px;
+}
+.region-header .block-menu-block ul.menu li a {
+    text-decoration:            none;
+    text-transform:             uppercase;
+    color:                      rgb(0, 0, 0);
+}
+.region-header .block-menu-block ul.menu li a.active-trail {
+    text-decoration:            underline;
+}
+.region-header .block-menu-block ul.menu li a:hover, .region-header .block-menu-block ul.menu li a.active {
+    text-decoration:            underline;
+    color:                      rgb(192, 0, 0);
+}
+.region-header .block-menu-block ul.menu li {
+    list-style:                 none outside none;
+    background:                 none repeat scroll 0% 0% transparent;
+    float:                      left;
+    position:                   relative;
+    padding:                    4px 15px 4px 0px;
+    margin-right:               2px;
+}
+.region-header .block-menu-block ul.menu li.expanded {
+    background:                 url("../images/li-expand.png") no-repeat scroll right 7px transparent;
+    margin-right:               15px;
+}
+.region-header .block-menu-block ul.menu li.expanded ul.menu {
+    display:                    none;
+    padding:                    4px 10px;
+    position:                   absolute;
+    height:                     16px;
+    top:                        22px;
+    left:                       -10px;
+    background:                 none repeat scroll 0px 0px rgb(204, 204, 204);
+    z-index:                    1;
+}
+.region-header .block-menu-block ul.menu li.expanded:hover ul.menu {
+    display:                    block;
+    z-index:                    2;
+}
+.region-header .block-menu-block ul.menu li.expanded ul.menu li {
+    float:                      left;
+    margin-right:               8px;
+    padding:                    0px 10px 0px 0px;
+}
+.region-header .block-menu-block ul.menu li.last {
+    margin-right:               0px;
+    padding-right:              0px;
+}
+.region-header .block-menu-block ul.menu li.expanded.menu-mlid-719 ul.menu {
+    left:                       auto;
+    right:                      -518px;
+    width:                      970px;
+}
+.region-header .block-menu-block ul.menu li.expanded.menu-mlid-725 ul.menu {
+    width:                      970px;
+    left:                       -487px;
+}
+.region-header .block-menu-block ul.menu li.expanded ul.menu li.last {
+    padding-right:              0px;
+}
+.region-header .block-menu-block ul.menu li.expanded.active-trail ul.menu {
+    display:                    block;
+}
+.taxonomy-term .category-title h1 {
+    font-weight:                normal;
+    display:                    inline;
+    margin:                     0px;
+    font-size:                  1.1em;
+}
+.plash .ico {
+    float:                      left;
+    background-repeat:          no-repeat;
+    margin-right:               10px;
+    margin-top:                 4px;
+    background-image:           url("../images/icons.png");
+    height:                     19px;
+    width:                      19px;
+}
+.taxonomy-term .category-title h1 .icons {
+    float:                      left;
+    background-image:           url("../images/icons2.png");
+    width:                      20px;
+    height:                     20px;
+    background-repeat:          no-repeat;
+    margin-right:               10px;
+    margin-top:                 4px;
+}
+.taxonomy-term .category-title {
+    line-height:                1.5em;
+}
+.taxonomy-term .category-title .arhive {
+    text-transform:             uppercase;
+    font-size:                  1.8em;
+}
+.taxonomy-term .category-title .arrow {
+    font-size:                  1.5em;
+}
+.view-category .views-row {
+    clear:                      both;
+    margin-bottom:              25px;
+}
+.view-category .views-row.views-row-last {
+    margin-bottom:              0px;
+}
+.view-category .views-row .views-field-field-img {
+    float:                      left;
+    width:                      150px;
+    margin-right:               10px;
+    margin-bottom:              10px;
+}
+.view-category .views-row .views-field-title a {
+    color:                      rgb(0, 0, 0);
+}
+.view-category .views-row .views-field-created, .view-category .views-row .views-field-comment-count, .view-category .views-row .views-field-totalcount, .view-category .views-row .views-field-field-raiting {
+    background:                 none repeat scroll 0px 0px rgb(241, 241, 241);
+    clear:                      both;
+    color:                      rgb(236, 135, 14);
+    float:                      left;
+    font-size:                  14px;
+    line-height:                18px;
+    margin-bottom:              6px;
+    padding:                    3px 10px;
+    width:                      130px;
+}
+.term-listing-heading {
+    margin-bottom:              20px;
+    margin-top:                 1.5em;
+}
+.view-category .views-row .views-field-comment-count {
+    clear:                      none;
+    width:                      50px;
+}
+.view-category .views-row .views-field-field-raiting {
+    clear:                      none;
+    width:                      375px;
+    height:                     18px;
+}
+.view-category .views-row .views-field-totalcount {
+    clear:                      none;
+    width:                      100px;
+}
+.view-category .views-row .views-field-title, .view-category .views-row .views-field-body {
+    float:                      left;
+    margin-bottom:              10px;
+    width:                      575px;
+}
+.view-category .views-row .views-field-title {
+    font-size:                  1.5em;
+    line-height:                1em;
+    margin-bottom:              10px;
+}
+.view-category .views-row .views-field-created span.create-ico, .view-category .views-row .views-field-comment-count span.create-ico, .view-category .views-row .views-field-totalcount span.create-ico {
+    background:                 url("../images/system_icons.png") no-repeat scroll -18px -18px transparent;
+    display:                    block;
+    float:                      left;
+    height:                     18px;
+    margin-right:               6px;
+    width:                      18px;
+}
+.view-category .views-row .views-field-body p {
+    margin:                     0px;
+}
+.view-category .views-row .views-field-comment-count span.create-ico {
+    background-position:        -36px -18px;
+}
+.view-category .views-row .views-field-totalcount span.create-ico {
+    background-position:        -108px 0px;
+}
+ul.pager a:hover, ul.pager a:focus, ul.pager a:active {
+    background-color:           rgb(241, 241, 241);
+    border:                     1px solid rgb(153, 153, 153) ! important;
+    color:                      rgb(51, 51, 51) ! important;
+}
+ul.pager li.pager-current {
+    border:                     1px solid rgb(255, 102, 15);
+    background:                 none repeat scroll 0px 0px rgb(241, 241, 241);
+    color:                      rgb(51, 51, 51);
+}
+ul.pager a:link, ul.pager a:visited {
+    color:                      rgb(120, 129, 136);
+    border:                     1px solid rgb(120, 129, 136);
+}
+ul.pager div.ajax-progress {
+    position:                   absolute;
+    right:                      0px;
+}
+.item-list .pager {
+    position:                   relative;
+    font-size:                  0.8em;
+    line-height:                0.8em;
+}
+ul.pager a, ul.pager li.pager-current {
+    text-decoration:            none;
+    margin-right:               1px;
+    padding:                    2px 6px;
+    border:                     1px solid rgb(153, 153, 153);
+}
+ul.pager .pager-item, ul.pager .pager-first, ul.pager .pager-previous, ul.pager .pager-next, ul.pager .pager-last, ul.pager .pager-ellipsis, ul.pager .pager-current {
+    padding:                    0px;
+}
+.taxonomy-term .category-title h1.golye-zvezdy .icons {
+    background-position:        -40px -60px;
+}
+.taxonomy-term .category-title h1.horoshie-novosti .icons {
+    background-position:        0px -40px;
+}
+.taxonomy-term .category-title h1.internet-istorii .icons {
+    background-position:        -60px -40px;
+}
+.taxonomy-term .category-title h1.satira-i-yumor .icons {
+    background-position:        -60px -40px;
+}
+.taxonomy-term .category-title h1.proza .icons {
+    background-position:        -60px -40px;
+}
+.taxonomy-term .category-title h1.stihi .icons {
+    background-position:        -60px -40px;
+}
+.taxonomy-term .category-title h1.anekdoty .icons {
+    background-position:        -60px -60px;
+}
+.taxonomy-term .category-title h1.foto-video-prikoly .icons {
+    background-position:        -20px -40px;
+}
+.taxonomy-term .category-title h1.smeshnoe-video .icons {
+    background-position:        -20px -40px;
+}
+.taxonomy-term .category-title h1.foto-prikoly .icons {
+    background-position:        -40px -40px;
+}
+.sidebar .block {
+    margin-bottom:              6px;
+}
+.view-category .view-content {
+    margin-bottom:              30px;
+}
+.field-name-field-tags, .field-name-field-field-autohs, .field-name-field-raiting {
+    color:                      rgb(236, 135, 14);
+    height:                     34px;
+}
+.front .field-name-field-raiting {
+    display:                    none;
+}
+.field-name-field-field-autohs .field-label {
+    margin-right:               10px;
+}
+.field-name-field-tags .field-label {
+    margin-right:               27px;
+}
+.field-name-field-tags a, .field-name-field-field-autohs a {
+    color:                      rgb(236, 135, 14);
+}
+.field-name-field-tags .field-item, .field-name-field-field-autohs .field-item {
+    display:                    inline;
+    font-style:                 italic;
+    line-height:                16px;
+    margin-right:               15px;
+}
+.articleInfo {
+    clear:                      both;
+    display:                    block;
+    overflow:                   hidden;
+    margin:                     12px 0px;
+    line-height:                20px;
+    color:                      rgb(236, 135, 14);
+    font-size:                  12px;
+}
+.articleInfo .date, .articleInfo .views, .articleInfo .comments {
+    float:                      left;
+    padding:                    8px 0px 0px;
+}
+.articleInfo .date span {
+    background:                 url("../images/system_icons.png") no-repeat scroll -18px -18px transparent;
+}
+.articleInfo .date span, .articleInfo .date a span {
+    display:                    block;
+    float:                      left;
+    height:                     18px;
+    margin-right:               4px;
+    width:                      18px;
+}
+.articleInfo .rating {
+    float:                      right;
+    font-size:                  13px;
+}
+.comments h2.title {
+    font-weight:                normal;
+}
+.comment-form label {
+    font-weight:                normal;
+    margin-bottom:              4px;
+}
+.comment-form .form-item {
+    margin:                     0.8em 0px 0.5em;
+}
+.comment-form .form-item .form-text, .comment-form .form-item .form-textarea {
+    border:                     1px solid rgb(204, 204, 204);
+    font-size:                  14px;
+    padding:                    3px;
+}
+.comment-form .form-actions {
+    margin:                     12px 0px;
+    float:                      right;
+}
+.comment-form .ajax-progress {
+    float:                      left;
+    margin-right:               12px;
+    padding-top:                6px;
+}
+.comment {
+    border:                     1px solid rgb(188, 192, 194);
+    margin:                     0px 0px 12px;
+    padding:                    6px;
+    line-height:                20px;
+    position:                   relative;
+}
+.comment.odd {
+    background:                 none repeat scroll 0px 0px rgb(255, 253, 170);
+}
+.comment p.submitted {
+    margin:                     0px 0px 12px;
+}
+.comment .links {
+    float:                      right;
+    margin:                     5px 18px 0px 0px;
+}
+.comment .links li {
+    padding-right:              0px;
+    padding-left:               15px;
+}
+.comment header {
+    font-size:                  12px;
+    color:                      rgb(102, 102, 102);
+}
+.comment .links .ajax-progress {
+    position:                   absolute;
+    right:                      0px;
+    bottom:                     5px;
+}
+h1#page-title {
+    font-size:                  20px;
+    line-height:                24px;
+    text-transform:             uppercase;
+    margin-top:                 0px;
+}
+.plash {
+    background:                 none repeat scroll 0% 0% rgb(255, 0, 0);
+    text-transform:             uppercase;
+    color:                      rgb(255, 255, 255);
+    font-size:                  13px;
+    line-height:                18px;
+    padding:                    5px 10px;
+    margin-bottom:              2px;
+}
+#main {
+    padding-top:                25px;
+}
+.plash a {
+    color:                      rgb(255, 255, 255);
+    text-decoration:            none;
+}
+.plash a:hover {
+    text-decoration:            underline;
+}
+.plash.golye-zvezdy .ico {
+    background-position:        -40px -20px;
+}
+.plash .ico {
+    margin-top:                 0px;
+}
+#footer {
+    display:                    block;
+    border:                     16px solid red;
+    padding-top:                0px;
+    position:                   relative;
+}
+#footer .block {
+    margin:                     0px;
+}
+.region-bottom ul.menu {
+    margin:                     0px;
+    padding:                    0px;
+}
+.region-bottom ul.menu li {
+    list-style:                 none outside none;
+    display:                    inline;
+    font-size:                  13px;
+    margin-right:               15px;
+}
+.taxonomy-term .category-title.tags h1 .icons, .plash .icons {
+    background-position:        -60px -40px;
+}
+.front #content .block-views {
+    float:                      left;
+}
+.front #content #block-views-front-good-news.block-views.first {
+    margin-top:                 -15px;
+    margin-bottom:              15px;
+}
+.front #content .block-views .view-content .views-row {
+    margin-right:               15px;
+    margin-bottom:              15px;
+}
+.front #content .block-views .view-content .views-row.views-row-last {
+    margin-right:               0px;
+    padding-bottom:             20px;
+    clear:                      both;
+}
+.front #content #block-views-front-good-news.block-views .view-content .views-row .views-field-title {
+    font-weight:                bold;
+    font-size:                  20px;
+    line-height:                24px;
+    background:                 none repeat scroll 0% 0% rgb(255, 255, 0);
+    overflow:                   hidden;
+    margin-bottom:              5px;
+    text-transform:             uppercase;
+    height:                     65px;
+    padding:                    10px 8px;
+}
+.front #content .block-views .view-content .views-row .views-field-title a {
+    color:                      rgb(0, 0, 0);
+    text-decoration:            none;
+}
+.front #content .block-views .view-content .views-row .views-field-title a:hover {
+    text-decoration:            underline;
+}
+.front #content .block-views .view-content .views-row .views-field-title {
+    height:                     auto;
+    margin-bottom:              5px;
+    overflow:                   hidden;
+    text-transform:             uppercase;
+    font-weight:                bold;
+    font-size:                  13px;
+    line-height:                17px;
+}
+.front #content .block-views .view-content .views-row .views-field-created {
+    float:                      left;
+    font-size:                  12px;
+    line-height:                14px;
+    width:                      115px;
+    margin-left:                0px;
+    clear:                      left;
+}
+.front #content .block-views .view-content .views-row .views-field-comment-count {
+    float:                      left;
+    margin-right:               10px;
+}
+.front #content .block-views .view-content .views-row .views-field .create-ico {
+    background:                 url("../images/system_icons.png") no-repeat scroll -15px -101px transparent;
+    display:                    inline-table;
+    height:                     14px;
+    width:                      14px;
+    margin-right:               5px;
+}
+.front #content .block-views .view-content .views-row .views-field-comment-count .create-ico {
+    background-position:        -29px -101px;
+}
+.front #content .block-views .view-content .views-row .views-field-totalcount .create-ico {
+    background-position:        -87px -87px;
+}
+.front #content .block-views .view-header {
+    background-color:           rgb(255, 0, 0);
+    color:                      rgb(255, 255, 255);
+    font-size:                  13px;
+    line-height:                18px;
+    text-transform:             uppercase;
+    margin-bottom:              2px;
+    padding:                    5px 0px 5px 4px;
+}
+.front #content .block-views .view-header a {
+    text-transform:             uppercase;
+    color:                      rgb(255, 255, 255);
+    text-decoration:            none;
+    white-space:                nowrap;
+}
+.front #content .block-views .view-header a:hover {
+    text-decoration:            underline;
+}
+.front #content #block-views-front-lovehistory.block-views .view-header .icon {
+    background-position:        -40px -20px;
+}
+.front #content #block-views-front-nakedsrtars.block-views .view-header .icon {
+    background-position:        -40px -20px;
+}
+.front #content #block-views-front-internet-history.block-views .view-header .icon {
+    background-position:        -20px -20px;
+}
+.front #content .block-views .view-header .icon {
+    background-repeat:          no-repeat;
+    float:                      left;
+    background-image:           url("../images/icons.png");
+    height:                     19px;
+    margin-right:               4px;
+    width:                      19px;
+}
+.front #content #block-views-front-anekdoty.block-views .view-header .icon {
+    background-position:        -60px -20px;
+}
+.front #content #block-views-front-funny-video.block-views .view-header .icon {
+    background-position:        -20px 0px;
+}
+.front #content #block-views-front-funny-photo.block-views .view-header .icon {
+    background-position:        -40px 0px;
+}
+.front #content #block-views-front-caricaturi.block-views .view-header .icon {
+    background-position:        0px -20px;
+}
+.front #content #block-views-front-stihi.block-views .view-header .icon {
+    background-position:        -60px 0px;
+}
+.front #content .block-views .view-content .views-row .views-field-body {
+    margin-bottom:              8px;
+    margin-top:                 4px;
+}
+.front #content #block-views-front-nakedsrtars.block-views {
+    margin-right:               15px;
+}
+.front #content .block-views .view-content .views-row .views-field-field-img a img {
+    display:                    block;
+}
+h1#page-title.title {
+    margin-top:                 16px;
+}
+.form-item.form-type-textfield label, .form-item.form-type-password label {
+    margin-bottom:              6px;
+    font-weight:                normal;
+}
+.form-item.form-type-textfield input, .form-item.form-type-password input {
+    border:                     1px solid rgb(204, 204, 204);
+    height:                     24px;
+    padding:                    2px;
+    line-height:                24px;
+}
+.form-item .description {
+    color:                      rgb(102, 102, 102);
+    font-style:                 italic;
+    margin:                     4px 0px;
+}
+.view-category .views-row .views-field-body .anecdots p {
+    margin:                     1em 0px;
+}
+.node-funny-photo .field-name-field-funny-photo .field-item, .node-caricatury .field-name-field-funny-photo .field-item {
+    margin-bottom:              25px;
+    text-align:                 center;
+}
+#cboxCurrent {
+    left:                       16px;
+    bottom:                     3px;
+}
+#cboxNext {
+    left:                       70px;
+}
+.views-field-field-funny-photo {
+    text-align:                 center;
+}
+.node-funny-video .field-name-body {
+    margin:                     12px 0px;
+}
+.view-front .subtheme {
+    background:                 none repeat scroll 0% 0% rgb(204, 204, 204);
+    color:                      rgb(255, 255, 255);
+    text-transform:             uppercase;
+    padding:                    5px 10px;
+    font-size:                  13px;
+    line-height:                18px;
+    margin-bottom:              2px;
+}
+.view-front .subtheme a {
+    text-decoration:            none;
+    color:                      rgb(255, 255, 255);
+}
+.view-front .subtheme a:hover {
+    text-decoration:            underline;
+}
+#block-views-front-proza.block-views p, #block-views-front-stihi.block-views p {
+    margin:                     0px 0px 8px;
+}
+.region-frontco1, .region-frontco2, .region-frontco3, .region-frontco4 {
+    float:                      left;
+    width:                      240px;
+    margin-right:               10px;
+}
+.region-frontco4 {
+    margin-right:               0px;
+}
+.region-frontco1 .block, .region-frontco2 .block, .region-frontco3 .block, .region-frontco4 .block {
+    float:                      none ! important;
+    margin-bottom:              0px;
+}
+#accordion-category h3 .icon {
+    background-repeat:          no-repeat;
+    float:                      left;
+    margin-right:               10px;
+    margin-top:                 0px;
+    background-image:           url("../images/icons.png");
+    margin-bottom:              3px;
+    height:                     19px;
+    width:                      19px;
+}
+#accordion-category.ui-accordion .ui-accordion-header {
+    background:                 none repeat scroll 0px 0px rgb(255, 0, 0);
+    color:                      rgb(255, 255, 255);
+    font-size:                  13px;
+    line-height:                18px;
+    padding:                    5px 10px;
+    text-transform:             uppercase;
+    border-radius:              0px 0px 0px 0px;
+    -moz-border-radius:         0px 0px 0px 0px;
+    -webkit-border-radius:      0px 0px 0px 0px;
+    border:                     medium none;
+    margin-bottom:              0px;
+    margin-top:                 4px;
+}
+#accordion-category.ui-accordion .ui-accordion-header .ui-accordion-header-icon {
+    background-image:           url("../images/cordion-ico.png");
+    left:                       auto;
+    right:                      10px;
+    margin-top:                 -5px;
+    background-position:        0px -11px;
+    height:                     11px;
+}
+#accordion-category.ui-accordion .ui-accordion-header.ui-state-active .ui-accordion-header-icon {
+    background-position:        0px 0px;
+}
+#accordion-category h3 .icon.golye-zvezdy {
+    background-position:        -40px -20px;
+}
+#accordion-category h3 .icon.karikatury {
+    background-position:        0px -20px;
+}
+#accordion-category h3 .icon.internet-istorii {
+    background-position:        -20px -20px;
+}
+#accordion-category h3 .icon.foto-prikoly {
+    background-position:        -40px 0px;
+}
+#accordion-category h3 .icon.satira-i-yumor {
+    background-position:        -60px 0px;
+}
+#accordion-category .children h4 {
+    background:                 none repeat scroll 0px 0px rgb(204, 204, 204);
+    color:                      rgb(255, 255, 255);
+    font-size:                  13px;
+    line-height:                18px;
+    margin:                     0px -10px 2px;
+    padding:                    5px 20px;
+    text-transform:             uppercase;
+    font-weight:                normal;
+}
+#accordion-category {
+    margin-top:                 -4px;
+}
+#accordion-category.ui-accordion .ui-accordion-content {
+    padding:                    0px 10px;
+    font-size:                  15px;
+    line-height:                15px;
+}
+#accordion-category.ui-accordion .ui-accordion-content .views-field-title {
+    text-transform:             uppercase;
+    margin-top:                 8px;
+    margin-bottom:              8px;
+}
+#accordion-category.ui-accordion .ui-accordion-content .views-field-title a {
+    color:                      rgb(0, 0, 0);
+    text-decoration:            none;
+}
+#accordion-category.ui-accordion .ui-accordion-content .views-field-title a:hover {
+    text-decoration:            underline;
+}
+#accordion-category.ui-accordion .ui-accordion-content p {
+    margin:                     0px 0px 4px;
+}
+#accordion-category.ui-accordion .ui-accordion-content .view-content {
+    padding-bottom:             20px;
+    padding-top:                10px;
+}
+#accordion-category.ui-accordion .ui-accordion-content.children .view-content {
+    padding-top:                0px;
+}
+#accordion-category.ui-accordion .views-field-field-funny-photo, #accordion-category.ui-accordion .views-field-field-img {
+    width:                      120px;
+    float:                      left;
+    margin-right:               10px;
+}
+#accordion-category.ui-accordion .views-row {
+    border-bottom:              1px dotted;
+    margin-bottom:              15px;
+    padding-bottom:             15px;
+}
+#accordion-category.ui-accordion .views-row-last {
+    border-bottom:              0px none;
+    margin-bottom:              0px;
+    padding-bottom:             0px;
+}
+#liveinternet {
+    position:                   absolute;
+    right:                      0px;
+    top:                        15px;
+}
+#content .region .block {
+    float:                      left;
+}
+.field-name-body ol li, .field-name-body ul li {
+    list-style-position:        inside;
+    margin:                     0px 0px 1em;
+}
+.field-name-body ol, .field-name-body ul {
+    padding-left:               0px;
+}
+#block-views-front-stihi .views-field-field-img, #block-views-front-internet-history .views-field-field-img, #block-views-front-proza .views-field-field-img {
+    float:                      left;
+    margin:                     0px 10px 10px 0px;
+}
+.front #content #block-views-front-stihi.block-views .view-content .views-row .views-field-title, .front #content #block-views-front-proza .view-content .views-row .views-field-title {
+    height:                     auto;
+}
+#repin {
+    color:                      rgb(255, 255, 255);
+    left:                       12px;
+    position:                   absolute;
+    top:                        70px;
+    z-index:                    20;
+    font-size:                  11px;
+}
+#repin:hover {
+    text-decoration:            none;
+}
+.view-front .view-content .views-field-field-img {
+    float:                      left;
+    margin:                     0px 10px 10px 0px;
+}
+.region-front-banners {
+    float:                      right;
+    width:                      240px;
+}
+#front-top .themesOfDay {
+    float:                      left;
+    width:                      740px;
+    margin:                     0px;
+}
+.region-front-banners .block {
+    margin:                     0px;
+    float:                      none;
+}
+.region-front-banners .block p {
+    margin:                     0px;
+}
+#accordion-category h3 .icon.misticheskie-istorii, .plash.misticheskie-istorii .ico, .front #content #block-views-front-block-16.block-views .view-header .icon {
+    background-image:           url("../images/mistique_logo.png");
+    background-position:        center center;
+}
+#accordion-category h3 .icon.zagadki-istorii, .plash.zagadki-istorii .ico, .front #content #block-views-front-block-6.block-views .view-header .icon {
+    background-position:        -38px 0px;
+}
+#accordion-category h3 .icon.vesti-iz-kosmosa, .plash.vesti-iz-kosmosa .ico, .front #content #block-views-front-block-9.block-views .view-header .icon {
+    background-position:        -57px 0px;
+}
+#accordion-category h3 .icon.iz-tmy-vekov, .plash.iz-tmy-vekov .ico, .front #content #block-views-front-block-13.block-views .view-header .icon {
+    background-position:        -76px 0px;
+}
+#accordion-category h3 .icon.neizvestnye-znamenitosti, .plash.neizvestnye-znamenitosti .ico, .front #content #block-views-front-block-7.block-views .view-header .icon {
+    background-position:        -57px -76px;
+}
+#accordion-category h3 .icon.sekretnye-materialy, .plash.sekretnye-materialy .ico, .front #content #block-views-front-block-4.block-views .view-header .icon {
+    background-position:        -57px -19px;
+}
+#accordion-category h3 .icon.zateryannye-plemena, .plash.zateryannye-plemena .ico, .front #content #block-views-front-block-1.block-views .view-header .icon {
+    background-position:        -76px -57px;
+}
+#accordion-category h3 .icon.za-morem-zhityo, .plash.za-morem-zhityo .ico, .front #content #block-views-front-block-8.block-views .view-header .icon {
+    background-position:        -45px -311px;
+    width:                      15px;
+    height:                     15px;
+    margin-left:                3px;
+    margin-right:               11px;
+}
+#accordion-category h3 .icon.ekzoticheskie-puteshestviya, .plash.ekzoticheskie-puteshestviya .ico, .front #content #block-views-front-block-5.block-views .view-header .icon {
+    background-position:        -19px -58px;
+}
+#accordion-category h3 .icon.udivitelnye-zhivotnye, .plash.udivitelnye-zhivotnye .ico, .front #content #block-views-front-block-12.block-views .view-header .icon {
+    background-position:        -19px -38px;
+}
+#accordion-category h3 .icon.nacionalnyy-otvet, .plash.nacionalnyy-otvet .ico, .front #content #block-views-front-block-11.block-views .view-header .icon {
+    background-position:        -38px -38px;
+}
+#accordion-category h3 .icon.kaprizy-prirody, .plash.kaprizy-prirody .ico, .front #content #block-views-front-block-10.block-views .view-header .icon {
+    background-position:        -38px -19px;
+}
+#accordion-category h3 .icon.samizdat, .plash.samizdat .ico, .front #content #block-views-front-block-15.block-views .view-header .icon {
+    background-position:        -76px -76px;
+}
+#block-views-front-block-3 .view-content p {
+    margin:                     0px 0px 6px;
+}
+input.button-save, input.button-delete {
+    background-color:           rgb(0, 255, 0);
+    border:                     1px solid green;
+    width:                      140px;
+    padding:                    2px;
+    border-radius:              4px 4px 4px 4px;
+    -moz-border-radius:         4px 4px 4px 4px;
+    -webkit-border-radius:      4px 4px 4px 4px;
+    cursor:                     pointer;
+}
+input.button-delete {
+    color:                      rgb(255, 255, 255);
+    background-color:           rgb(255, 114, 0);
+    border-color:               red;
+    margin-left:                10px;
+}
+input.right {
+    margin-right:               335px;
+}
+.node-form .form-field-name-field-field-autohs, .node-form .form-field-name-field-tags {
+    width:                      655px;
+}
+.node-form .vertical-tabs {
+    width:                      425px;
+}
+.page-node-edit #footer, .page-node-add #footer {
+    display:                    none;
+}
+#google-adsense {
+    margin:                     0px 0px 10px;
+    text-align:                 center;
+}
+#back-top {
+    width:                      110px;
+    height:                     100px;
+    margin:                     0px;
+    position:                   fixed;
+    left:                       20px;
+    z-index:                    50;
+    top:                        2px;
+}
+#back-top a {
+    display:                    block;
+    width:                      110px;
+    height:                     100px;
+}
+ul.links .statistics_counter {
+    background:                 url("../images/system_icons.png") no-repeat scroll -108px 0px transparent;
+    color:                      rgb(236, 135, 14);
+    font-size:                  12px;
+    padding:                    0px;
+    display:                    block;
+    height:                     18px;
+    margin:                     8px 0px;
+}
+.front ul.links .statistics_counter {
+    display:                    none;
+}
+ul.links .statistics_counter span {
+    background:                 none repeat scroll 0% 0% rgb(255, 255, 255);
+    line-height:                18px;
+    margin-left:                22px;
+}
+.field-name-field-raiting .description {
+    float:                      left;
+    margin-top:                 0px;
+}
+.field-name-field-raiting .fivestar-widget, .field-name-field-raiting .fivestar-small {
+    float:                      left;
+    margin:                     0px 25px 6px 0px;
+    position:                   relative;
+}
+.field-name-field-raiting .fivestar-widget .ajax-progress {
+    position:                   absolute;
+    top:                        -2px;
+    left:                       102px;
+}
+.field-name-field-raiting .fivestar-widget .ajax-progress .message {
+    display:                    none;
+}
+.front .views-field-field-raiting {
+  margin-top:                 4px;
+}
+.stats {
+  margin:                     18px 0px 10px;
+}
+#header #logo, #header .region-banner{
+  height: 90px;
+}
+
+#rt-n-4488, #rt-n-4475{
+  width: 166px;
+  margin: auto;
+}

@@ -1,0 +1,290 @@
+<?php
+
+/*
+ * Implements hook_menu_alter
+ *
+ */
+
+function category_menu_alter(&$items) {
+  if (isset($items['taxonomy/term/%taxonomy_term'])) {
+    $items['taxonomy/term/%taxonomy_term']['page callback'] = 'category_term_page';
+  }
+}
+
+function category_term_page($term) {
+  drupal_set_title($term->name);
+
+  $current = (object) array(
+              'tid' => $term->tid,
+  );
+  $breadcrumb = array();
+  drupal_set_breadcrumb($breadcrumb);
+
+  $build['term_heading'] = array(
+      '#prefix' => '<div class="term-listing-heading">',
+      '#suffix' => '</div>',
+      'term' => taxonomy_term_view($term, 'full'),
+  );
+
+  $view = views_get_view('category');
+  if ($term->vocabulary_machine_name == 'tags') {
+    $view->set_display('tags');
+  } elseif ($term->vocabulary_machine_name == 'catelory') {
+    $view->set_display('block');
+  } elseif ($term->vocabulary_machine_name == 'authors') {
+    $view->set_display('authors');
+  }
+  $children = taxonomy_get_children($term->tid);
+  $arg_tid = $term->tid;
+  foreach ($children as $child) {
+    $arg_tid .= '+' . $child->tid;
+  }
+
+  $view->set_arguments(array($arg_tid));
+  $view->pre_execute();
+  $view->execute();
+
+  $build['term_body'] = array(
+      '#prefix' => '<div class="term-listing-body">',
+      '#suffix' => '</div>',
+      '#markup' => $view->render('block'),
+  );
+
+  return $build;
+}
+
+/*
+ * Implements hook_preprocess_views_view_field(&$vars)
+ *
+ */
+
+function category_preprocess_views_view_field(&$vars) {
+//  if ($vars['view']->name == "category" && $vars['field']->field == 'body' &&
+//          !empty($vars['row']->_field_data['nid']['entity']->field_category)) {
+//    $term = taxonomy_term_load($vars['row']->_field_data['nid']['entity']->field_category['und'][0]['tid']);
+//    if ($term && $term->name == 'Анекдоты') {
+//      // В анекдотах выводим всю body целиком
+//      $vars['output'] = '<div class="anecdots">' . $vars['row']->field_body[0]['raw']['value'] . '</div>';
+//    }
+//  }
+}
+
+/**
+ * Implements hook_block_info().
+ *
+ * This hook declares what blocks are provided by the module.
+ */
+function category_block_info() {
+  return array(
+      'category_block' => array(
+//          'cache' => DRUPAL_CACHE_GLOBAL,
+          'cache' => DRUPAL_NO_CACHE,
+          'status' => TRUE,
+          'info' => t('Block with acordion category'),
+          'region' => 'sidebar_second',
+      )
+  );
+}
+
+/**
+ * Implements hook_block_configure().
+ *
+ * This hook declares configuration options for blocks provided by this module.
+ */
+function category_block_configure($delta = '') {
+  $form = array();
+  /*if ($delta == 'category_block') {
+    $terms = variable_get('category_block_terms', '');
+    $form['category_block_terms'] = array(
+        '#type' => 'textfield',
+        '#title' => t('Terms'),
+        '#size' => 60,
+        '#required' => true,
+        '#default_value' => $terms,
+        '#description' => 'Id-терминов для вывода категорий (через ,)'
+    );
+  }*/
+  return $form;
+}
+
+/**
+ * Implements hook_block_save().
+ *
+ * This hook declares how the configured options for a block
+ * provided by this module are saved.
+ */
+function category_block_save($delta = '', $edit = array()) {
+  if ($delta == 'category_block') {
+    // Have Drupal save the string to the database.
+//    variable_set('category_block_terms', $edit['category_block_terms']);
+  }
+  return;
+}
+
+/**
+ * Implements hook_block_view().
+ *
+ * This hook generates the contents of the blocks themselves.
+ */
+function category_block_view($delta = '') {
+  if ($delta == 'category_block') {
+    // определяем дефолтную рубрику
+	$node_wrapper = entity_metadata_wrapper('node', arg(1));
+	$terms_array = array($node_wrapper->field_category->tid->value());
+    $block['content'] = category_block_contents($delta, $terms_array);
+  }
+  return $block;
+}
+
+function category_block_contents($which_block, $terms = array()) {
+  if ($which_block == 'category_block') {
+    $output = '<div id="category">';
+    foreach ($terms as $term_id) {
+      if ($term = taxonomy_term_load(trim($term_id))) {
+		$name = category_name_padezh($term->name);
+        $output .= '<div  class="temr-item ' . anotherworlds_css_class($term->name) . '"><h3>' . l('Архив ' . $name, 'taxonomy/term/' . $term->tid) . '</h3></a>';
+        $children = taxonomy_get_children($term->tid);
+        if (count($children) > 0) {
+          $output .= '<div class="children">';
+          foreach($children as $ichild){
+            $output .= '<h4>' . $ichild->name . '</h4>';
+            $output .= category_block_contents_view($ichild->tid);
+          }
+          $output .= '</div>';
+        } else {
+          $output .= category_block_contents_view($term->tid);
+        }
+		$output .= '</div>';
+      }
+    }
+    $output .= '</div>';
+    return array('#markup' => $output);
+  }
+}
+
+function category_block_contents_view($arg) {
+  $view = views_get_view('category_right');
+  $view->set_arguments(array($arg));
+  $view->execute();
+  $view->dom_id = 'default';
+  return $view->render();
+}
+
+/**
+ *   Return validate css class or id name
+ */
+function anotherworlds_css_class($class){
+  if(function_exists('transliteration_get')){
+    $class = transliteration_get($class);
+  }
+  return str_replace(' ', '-', drupal_strtolower($class));
+}
+
+/**
+ * Изменение категорий по падежам
+ */
+function category_name_padezh($name){
+	switch($name){
+		case 'Вести из космоса':
+		return 'вестей из космоса';
+		case 'Загадки истории':
+		return 'загадок истории';
+		case 'Из тьмы веков':
+		return 'из тьмы веков';
+		case 'Мистические истории':
+		return 'мистических историй';
+		case 'Затерянные племена':
+		return 'затеряных племён';
+		case 'Удивительные животные':
+		return 'удивительных животных';
+	}
+}
+
+/*
+ * Implements hook_form_alter()
+ *
+ */
+function category_form_alter(&$form, &$form_state, $form_id){
+  if($form_id == 'page_node_form' && isset($form['field_category']) && isset($form['field_category']['und'])){
+    foreach($form['field_category']['und']['#options'] as $key => $value){
+      if($value == 'Карикатуры' || $value == 'Фото-видео приколы' || $value == '-Смешное видео' || $value == '-Фото приколы'){
+        unset($form['field_category']['und']['#options'][$key]);
+      }
+    }
+
+    if(arg(0) == 'node' && arg(1) == 'add' && arg(2) == 'page' && is_numeric(arg(3))){
+      $form['field_category']['und']['#default_value'] = arg(3);
+    }
+    $form['actions']['submit']['#attributes']['class'][] = 'button-save';
+	$form['actions']['delete']['#attributes']['class'][] = 'button-delete';
+
+    $form['submit_1'] = $form['actions']['submit'];
+    $form['submit_2'] = $form['actions']['submit'];
+    $form['submit_1']['#weight'] = $form['body']['#weight'] - 0.5;
+    $form['submit_2']['#weight'] = $form['body']['#weight'] + 0.5;
+    $form['submit_1']['#attributes']['class'][] = 'right';
+    $form['submit_1']['#suffix'] = '<div class="clear"></div>';
+    $form['submit_2']['#attributes']['class'][] = 'right';
+    $form['submit_2']['#suffix'] = '<div class="clear"></div>';
+  }
+
+}
+
+function category_menu()
+{
+  return array(
+	  'banners' => array(
+		  'page callback' => 'banners_page',
+		  'page arguments' => array(1),
+		  'access arguments' => array('access content'),
+		  'type' => MENU_CALLBACK,
+	  )
+  );
+}
+
+function banners_page($banner)
+{
+  if ($banner == 'forex') {
+	print '<a href="http://partner.forexoptimum.ru/client/136/0"><img src="http://partner.forexoptimum.ru/sites/partner.forexoptimum.ru/files/banners/6080_banner_4t_240x400_m.gif" /></a>';
+  }
+  drupal_exit();
+}
+
+function category_get_last_nodes($cat_id){
+	$output = '';
+
+	$select = db_select('node', 'n');
+	$select->join('field_data_field_category', 'c', 'n.nid = c.entity_id');
+	$select->condition('field_category_tid', $cat_id);
+	$select->fields('n', array('nid', 'title'));
+	$select->orderBy('created', 'DESC');
+	$select->range(0,14);
+	$result = $select->execute();
+	
+	foreach($result as $row){
+		$output .= '<li>' . l($row->title, 'node/' . $row->nid) . '</li>';
+	}
+
+	return $output;
+}
+
+
+/*
+ * Праздники сегодня
+ */
+function _day(){
+	$cache = cache_get('calenday', 'cache');
+    if ($cache && !empty($cache->data)) {
+      return $cache->data;
+    }
+	
+	$calend = file_get_contents('http://www.calend.ru/img/export/informer_new_3u.js');
+	if(strlen($calend) > 0 && preg_match_all('~class="\+calendru_c\+" >([^<]*)</a>~iUs', $calend, $m)){
+		if(isset($m[1][0])){
+			cache_set('calenday', $m[1][0], 'cache', 24*60*60);
+			return $m[1][0];
+			}
+	}
+	
+	return '';
+}

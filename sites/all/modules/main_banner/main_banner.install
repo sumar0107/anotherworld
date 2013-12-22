@@ -1,0 +1,14 @@
+<?php
+/**
+ * @file
+ * Install, update and uninstall functions for the main_banner module.
+ */
+
+/**
+ * Implements hook_uninstall().
+ *
+ */
+function main_banner_uninstall() {
+  variable_del('main_banner_link');
+  variable_del('main_banner_image_fid');
+}

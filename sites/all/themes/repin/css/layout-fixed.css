@@ -1,0 +1,177 @@
+/**
+ * @file
+ * Positioning for a fixed-width, desktop-centric layout.
+ *
+ * Define CSS classes to create a table-free, 3-column, 2-column, or single
+ * column layout depending on whether blocks are enabled in the left or right
+ * columns.
+ *
+ * This layout uses the Zen Grids plugin for Compass: http://zengrids.com
+ */
+
+ /**
+ * Sticky footer
+ *
+ * Used for fixed-height footers on thin content pages. It is meant to
+ * make the content div expand to the bottom of the viewport and 
+ * prevent the footer from floating up and breaking the design.
+ */
+ 
+html, body {height: 100%;}
+#page {
+  position: relative;
+  min-height: 100%;
+}
+* html #page {
+  height: 100%;
+}
+#main-wrap {
+  padding-bottom: 115px;
+}
+#footer {
+  position: relative;
+  height: 115px;
+  margin-top: -116px;
+} 
+body #footer{
+  border-top: 1px solid #ccc !important;
+}
+
+
+/*
+ * Center the page.
+ */
+
+#page,
+.region-bottom, #footer {
+  /* If you want to make the page a fixed width and centered in the viewport,
+   * this is the standards-compliant way to do that. */
+  margin-left: auto;
+  margin-right: auto;
+  width: 990px;
+}
+
+/*
+ * Apply the shared properties of grid items in a single, efficient ruleset.
+ */
+
+#header,
+#content,
+#navigation,
+.region-sidebar-first,
+.region-sidebar-second,
+#footer {
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 0 !important;
+  word-wrap: break-word;
+  *behavior: url("/path/to/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+
+/*
+ * Containers for grid items and flow items.
+ */
+
+#header,
+#main,
+#footer {
+  *position: relative;
+  *zoom: 1;
+}
+
+#header:before,
+#header:after,
+#main:before,
+#main:after,
+#footer:before,
+#footer:after {
+  content: "";
+  display: table;
+}
+
+#header:after,
+#main:after,
+#footer:after {
+  clear: both;
+}
+
+/*
+ * Navigation bar
+ */
+
+#main {
+  padding-top: 0em; /* Move all the children of #main down to make room. */
+  position: relative;
+  padding-bottom: 1em;
+}
+
+#navigation {
+  position: absolute;
+  top: 0; /* Move the navbar up inside #main's padding. */
+  height: 3em;
+  width: 960px;
+}
+
+/*
+ * The layout when there is only one sidebar, the left one.
+ */
+
+.sidebar-first #content { /* Span 4 columns, starting in 2nd column from left. */
+  float: left;
+  width: 764px;
+  margin-left: 196px;
+  margin-right: -990px;
+}
+
+.sidebar-first .region-sidebar-first { /* Span 1 column, starting in 1st column from left. */
+  float: left;
+  width: 176px;
+  margin-left: 0px;
+  margin-right: -196px;
+}
+
+/*
+ * The layout when there is only one sidebar, the right one.
+ */
+
+.sidebar-second #content { /* Span 4 columns, starting in 1st column from left. */
+  float: left;
+  width: 735px;
+  margin-left: 0px;
+  margin-right: -735px;
+}
+
+.sidebar-second .region-sidebar-second { /* Span 1 column, starting in 5th column from left. */
+  float: left;
+  width: 240px;
+  margin-left: 749px;
+  margin-right: -990px;
+}
+
+/*
+ * The layout when there are two sidebars.
+ */
+
+.two-sidebars #content { /* Span 3 columns, starting in 2nd column from left. */
+  float: left;
+  width: 568px;
+  margin-left: 196px;
+  margin-right: -784px;
+}
+
+.two-sidebars .region-sidebar-first { /* Span 1 column, starting in 1st column from left. */
+  float: left;
+  width: 176px;
+  margin-left: 0px;
+  margin-right: -196px;
+}
+
+.two-sidebars .region-sidebar-second { /* Span 1 column, starting in 5th column from left. */
+  float: left;
+  width: 176px;
+  margin-left: 784px;
+  margin-right: -980px;
+}

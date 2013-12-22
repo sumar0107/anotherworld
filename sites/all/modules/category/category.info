@@ -1,0 +1,5 @@
+name = category
+description = Display page with category
+core = 7.x
+dependencies[] = taxonomy
+dependencies[] = views

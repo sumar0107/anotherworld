@@ -1,0 +1,4 @@
+name = Main banner
+description = Main banner on header
+core = 7.x
+dependencies[] = block

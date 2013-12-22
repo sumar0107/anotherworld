@@ -1,0 +1,54 @@
+.gsc-control-cse.gsc-control-cse-ru {
+    padding:                    0px;
+}
+.gsc-search-box-tools .gsc-search-box input.gsc-input {
+    font-size:                  11px;
+    margin-top:                 2px ! important;
+    background-position:        -46px 0px ! important;
+    background-image:           none ! important;
+}
+.gsc-search-box-tools .gsc-search-box .gsc-input:focus {
+    background-image:           none ! important;
+}
+.gsc-input-box {
+    height:                     18px ! important;
+    margin-top:                 4px ! important;
+}
+table.gsc-search-box td {
+    padding:                    0px 0px 0px 4px ! important;
+}
+input.gsc-search-button {
+    background-image:           url("../images/search.png") ! important;
+    padding:                    4px 4px 4px 38px ! important;
+    height:                     20px ! important;
+    line-height:                12px ! important;
+    margin-top:                 5px ! important;
+    background-position:        2px 1px;
+}
+table.gsc-search-box {
+    margin-right:               0px;
+    margin-left:                0px;
+    width:                      175px ! important;
+    line-height:                12px;
+    margin-bottom:              0px ! important;
+    margin-top:                 -10px;
+}
+.gsc-control-cse .gs-spelling, .gsc-control-cse .gs-result .gs-title, .gsc-control-cse .gs-result .gs-title * {
+    text-align:                 left;
+}
+.search-label {
+    float:                      left;
+    padding-top:                0px;
+}
+.gsc-input-box table {
+    margin:                     0px;
+}
+.google-search table tbody {
+    border:                     medium none;
+}
+.google-search {
+    float:                      left;
+}
+.google-search #___gcse_0 {
+    float:                      left;
+}

@@ -1,0 +1,155 @@
+.themesOfDay {
+    margin-top:                 8px;
+    border-collapse:            collapse;
+}
+.themesOfDay .photo {
+    width:                      392px;
+    height:                     255px;
+}
+.themesOfDay .theme {
+    height:                     124px;
+}
+.themesOfDay .theme > div .shortText {
+    overflow:                   hidden;
+    height:                     62px;
+}
+.themesOfDay .theme > div .popup {
+    display:                    none;
+    width:                      10px;
+    height:                     10px;
+    background:                 none repeat scroll 0% 0% green;
+    position:                   absolute;
+    top:                        0px;
+    left:                       -24px;
+    z-index:                    8;
+}
+.themesOfDay .theme > div .popup .arrow {
+    position:                   absolute;
+    left:                       1px;
+    width:                      23px;
+    height:                     85px;
+    background:                 url("../images/icons.png") no-repeat scroll -95px 0px transparent;
+}
+.themesOfDay .theme > div .popup a {
+    height:                     400px;
+    left:                       -368px;
+    max-width:                  none;
+    position:                   absolute;
+    top:                        -1px;
+    width:                      392px;
+    z-index:                    -1;
+}
+.themesOfDay .theme > div .t2 a {
+    top:                        -132px;
+}
+.themesOfDay .theme > div .t3 a {
+    top:                        -261px;
+}
+.themesOfDay .theme > div {
+    color:                      black;
+    display:                    block;
+    overflow:                   visible;
+    position:                   relative;
+    z-index:                    1;
+    width:                      100%;
+    padding-top:                8px;
+    padding-bottom:             4px;
+    border-top:                 1px solid rgb(204, 204, 204);
+    text-decoration:            none;
+}
+.themesOfDay .mask {
+    width:                      335px;
+    overflow:                   hidden;
+}
+.themesOfDay .last > div {
+    border-bottom:              1px solid rgb(204, 204, 204);
+}
+.themesOfDay .theme > div h2 {
+    padding:                    0px;
+    margin:                     0px 0px 2px;
+    display:                    block;
+    white-space:                nowrap;
+    width:                      95%;
+    font-weight:                bold;
+    text-transform:             uppercase;
+    color:                      black;
+    text-decoration:            underline;
+    position:                   relative;
+    overflow:                   hidden;
+    font-size:                  20px;
+    height:                     32px;
+}
+.themesOfDay .theme h2 .white_grad {
+    width:                      30px;
+    height:                     40px;
+    background:                 url("../images/grad_white.png") repeat-y scroll left top transparent;
+    display:                    block;
+    position:                   absolute;
+    z-index:                    1;
+    right:                      0px;
+    top:                        0px;
+}
+.themesOfDay .theme > div p {
+    padding:                    0px;
+    margin:                     0px;
+    color:                      rgb(51, 51, 51);
+    font-size:                  15px;
+}
+.themesOfDay .theme a {
+    color:                      black;
+}
+.themesOfDay .theme .articleInfoMini {
+    overflow:                   hidden;
+    height:                     17px;
+    margin-top:                 4px;
+}
+.themesOfDay .theme .articleInfoMini div {
+    float:                      left;
+    font-size:                  85%;
+    height:                     17px;
+}
+.themesOfDay .theme .articleInfoMini div, .themesOfDay .theme .articleInfoMini div a {
+    color:                      rgb(136, 136, 136);
+}
+.themesOfDay .theme .articleInfoMini div span {
+    width:                      14px;
+    height:                     14px;
+    display:                    block;
+    float:                      left;
+    margin-right:               4px;
+}
+.themesOfDay .theme .articleInfoMini div.date {
+    line-height:                14px;
+    display:                    block;
+    width:                      32%;
+}
+.themesOfDay .theme .articleInfoMini div.date span {
+    background:                 url("../images/system_icons.png") no-repeat scroll -14px -72px transparent;
+}
+.themesOfDay .theme .articleInfoMini div.views {
+    width:                      20%;
+}
+.themesOfDay .theme .articleInfoMini div.views span {
+    background:                 url("../images/system_icons.png") no-repeat scroll -86px -58px transparent;
+}
+.themesOfDay .theme .articleInfoMini div.cat {
+    width:                      55%;
+}
+.themesOfDay .theme .articleInfoMini div.cat span {
+    height:                     15px;
+    width:                      15px;
+}
+.themesOfDay .theme > div h2, .themesOfDay .theme > div p, .themesOfDay .theme .articleInfoMini {
+    margin-left:                12px;
+}
+.themesOfDay .theme > div:hover h2 {
+    text-decoration:            none;
+    color:                      rgb(51, 51, 51);
+}
+.themesOfDay .theme > div.show .popup {
+    display:                    block;
+    z-index:                    10;
+}
+.themesOfDay td {
+    padding:                    0px;
+}

@@ -1,0 +1,3 @@
+name = admin_theme
+description = Features in admin page
+core = 7.x
