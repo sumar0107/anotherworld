@@ -1,4 +1,4 @@
-<div id="page">
+﻿<div id="page">
 	<div id="main-wrap">
 		<div id="pre_header">
 			<header class="header" id="header" role="banner">
@@ -79,7 +79,11 @@
 				<?php if ($action_links): ?>
 					<ul class="action-links"><?php print render($action_links); ?></ul>
 				<?php endif; ?>
-				<div id="front-top" class="clearfix"><?php if (isset($slideshow)) print $slideshow; ?></div>
+
+				<?php if (isset($slideshow)): ?>
+					<div id="front-top" class="clearfix"><?php print $slideshow; ?></div>
+				<?php endif; ?>
+
 				<?php print render($page['banner']); ?>
 				<?php print render($page['content']); ?>
 				<?php print $feed_icons; ?>
