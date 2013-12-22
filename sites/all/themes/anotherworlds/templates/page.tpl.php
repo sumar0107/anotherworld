@@ -1,4 +1,4 @@
-﻿<div id="page">
+<div id="page">
 	<div id="main-wrap">
 		<div id="pre_header">
 			<header class="header" id="header" role="banner">
